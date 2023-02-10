@@ -12,7 +12,7 @@ metadata:
   namespace: showeimer-tenant
 spec:
   port:
-    targetPort: 8080
+    targetPort: 3001
   tls:
     insecureEdgeTerminationPolicy: Redirect
     termination: edge
