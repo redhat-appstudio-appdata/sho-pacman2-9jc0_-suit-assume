@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: pacman-1fyz
+  namespace: showeimer-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:74f381bc7b9191aef603fc15857b2d7fb7caafcee83bbaa597e990a860c38396
+        name: container-image
+        resources: {}
+status: {}
