@@ -1,0 +1,23 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: pacman-1fyz
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: pacman-1fyz
+    app.kubernetes.io/part-of: sho-pacman2
+  name: pacman-1fyz
+  namespace: showeimer-tenant
+spec:
+  port:
+    targetPort: 8080
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: pacman-1fyz
+    weight: 100
+status: {}
