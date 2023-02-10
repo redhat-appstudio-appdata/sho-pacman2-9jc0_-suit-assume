@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: pacman-1fyz
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:showeimer-tenant-pacman-1fyz
+      - image: quay.io/redhat-appstudio/user-workload@sha256:74f381bc7b9191aef603fc15857b2d7fb7caafcee83bbaa597e990a860c38396
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
